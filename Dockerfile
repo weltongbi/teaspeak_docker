@@ -4,9 +4,9 @@ RUN apt-get update -y &&\
 	apt-get --no-install-recommends install -y wget curl ca-certificates &&\
 	rm -rf /var/lib/apt/lists/*
 WORKDIR /opt/teaspeak
-RUN wget https://repo.teaspeak.de/server/linux/amd64_optimized/TeaSpeak-1.3.17-beta.tar.gz &&\
-	tar -xzf TeaSpeak-1.3.17-beta.tar.gz &&\
-	rm TeaSpeak-1.3.17-beta.tar.gz
+RUN wget https://repo.teaspeak.de/server/linux/amd64_stable/TeaSpeak-1.3.19.tar.gz &&\
+	tar -xzf TeaSpeak-1.3.19.tar.gz &&\
+	rm TeaSpeak-1.3.19.tar.gz
 RUN ./install_libnice.sh
 RUN apt-get purge -y wget curl ca-certificates
 COPY config.yml /opt/teaspeak/
