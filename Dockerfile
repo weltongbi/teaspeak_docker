@@ -8,7 +8,6 @@ RUN apt-get update -y &&\
         rm TeaSpeak-1.3.25-2.tar.gz &&\
         ./install_libnice.sh &&\
         apt-get purge -y wget curl ca-certificates &&\
-        rm -r tmp_files &&\
         rm -rf /var/lib/apt/lists/*
 COPY config.yml /opt/teaspeak/
 COPY protocol_key.txt /opt/teaspeak/
