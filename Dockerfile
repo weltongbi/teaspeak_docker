@@ -8,7 +8,6 @@ RUN apt-get update -y &&\
         wget https://repo.teaspeak.de/server/linux/amd64_optimized/TeaSpeak-1.4.10-beta-3.tar.gz &&\
         tar -xzf TeaSpeak-1.4.10-beta-3.tar.gz &&\
         rm TeaSpeak-1.4.10-beta-3.tar.gz &&\
-        ./install_libnice.sh &&\
         ./install_music.sh install &&\
         apt-get purge -y wget curl unzip &&\
         rm -r tmp_files &&\
