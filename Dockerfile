@@ -1,13 +1,14 @@
 FROM debian:10-slim
+ARG TEA_VERSION=1.4.12
 RUN mkdir -p /opt/teaspeak
 WORKDIR /opt/teaspeak
 RUN apt-get update -y &&\
         apt-get --no-install-recommends install -y wget curl unzip ca-certificates python &&\
         wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &&\
         chmod a+rx /usr/local/bin/youtube-dl &&\
-        wget https://repo.teaspeak.de/server/linux/amd64_optimized/TeaSpeak-1.4.10-beta-3.tar.gz &&\
-        tar -xzf TeaSpeak-1.4.10-beta-3.tar.gz &&\
-        rm TeaSpeak-1.4.10-beta-3.tar.gz &&\
+        wget https://repo.teaspeak.de/server/linux/amd64_stable/TeaSpeak-TEA_VERSION.tar.gz &&\
+        tar -xzf TeaSpeak-TEA_VERSION.tar.gz &&\
+        rm TeaSpeak-TEA_VERSION.tar.gz &&\
         ./install_music.sh install &&\
         apt-get purge -y wget curl unzip &&\
         rm -r tmp_files &&\
