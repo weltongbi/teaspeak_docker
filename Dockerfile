@@ -4,7 +4,7 @@ RUN mkdir -p /opt/teaspeak
 WORKDIR /opt/teaspeak
 RUN apt-get update -y &&\
         apt-get --no-install-recommends install -y wget curl unzip ca-certificates python &&\
-        wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &&\
+        wget https://yt-dl.org/downloads/latest/youtube-dl --no-check-certificate -O /usr/local/bin/youtube-dl &&\
         chmod a+rx /usr/local/bin/youtube-dl &&\
         wget https://repo.teaspeak.de/server/linux/amd64_stable/TeaSpeak-$TEA_VERSION.tar.gz &&\
         tar -xzf TeaSpeak-$TEA_VERSION.tar.gz &&\
