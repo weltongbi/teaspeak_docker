@@ -138,7 +138,7 @@ general:
     #  Available urls:
     #    sqlite://[file]
     #    mysql://[host][:port]/[database][?propertyName1=propertyValue1[&propertyName2=propertyValue2]...]
-    #  
+    #
     #  More info about about the mysql url could be found here: https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference-configuration-properties.html
     #  There's also a new property called 'connections', which describes how many connections and queries could be executed synchronously
     #  MySQL example: mysql://localhost:3306/teaspeak?userName=root&password=mysecretpassword&connections=4
@@ -199,7 +199,7 @@ server:
   #Notes:
   #  This option is only for the premium version.
   #The value must be a string
-  version: TeaSpeak 1.4.14
+  version: TeaSpeak 1.4.22
   #Description:
   #  The displayed platform to the client
   #Notes:
