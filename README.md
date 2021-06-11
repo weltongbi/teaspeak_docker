@@ -13,6 +13,7 @@ docker run -d \
 ### Others versions
 
 ```
+weltongbi/teaspeak:v-1.4.22
 weltongbi/teaspeak:v-1.4.14
 weltongbi/teaspeak:v-1.4.12
 ```
