@@ -315,13 +315,13 @@ voice:
   #Notes:
   #  A value of zero means unlimited
   #The value must be a positive numeric value between 0 and 1024
-  connect_limit: 10
+  connect_limit: 100
   #Description:
   #  Maximum amount of join attempts per second per ip.
   #Notes:
   #  A value of zero means unlimited
   #The value must be a positive numeric value between 0 and 1024
-  client_connect_limit: 3
+  client_connect_limit: 100
   protocol:
     #Description:
     #  Enables the newer and safer protocol based on TeamSpeak's documented standard
