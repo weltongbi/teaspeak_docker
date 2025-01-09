@@ -4,6 +4,7 @@
 [![Docker Image Size](https://img.shields.io/docker/image-size/weltongbi/teaspeak/latest)](https://hub.docker.com/r/weltongbi/teaspeak)
 [![Docker Stars](https://img.shields.io/docker/stars/weltongbi/teaspeak)](https://hub.docker.com/r/weltongbi/teaspeak)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/weltongbi/teaspeak_docker/main.yml)](https://github.com/weltongbi/teaspeak_docker/actions)
+[![GitHub Release](https://img.shields.io/github/v/release/weltongbi/teaspeak_docker)](https://github.com/weltongbi/teaspeak_docker/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/weltongbi/teaspeak_docker)](https://github.com/weltongbi/teaspeak_docker/blob/master/LICENSE)
 
 A Docker project for TeaSpeak, a free alternative to TeamSpeak 3 Server.
